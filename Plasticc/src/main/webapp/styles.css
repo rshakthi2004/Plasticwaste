@@ -1,0 +1,205 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('ref.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    background-color: #f0f0f0; /* Added fallback background color */
+}
+
+/* Header Styling */
+/* Header Styling */
+header {
+    background: rgba(76, 175, 80, 0.9);
+    color: white;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space out the title and button */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Title Styling in the header */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    background-color: #f44336; /* Red button for logout */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: auto;  /* Pushes the logout button to the right */
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f; /* Slightly darker red when hovered */
+}
+
+
+/* Main Section */
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 100px; /* Adds space below the fixed header */
+    box-sizing: border-box;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Headings */
+h2 {
+    margin-top: 0;
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form button, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Canvas Styling */
+canvas {
+    max-width: 100%;
+    height: 300px;
+}
+
+/* Login Container */
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Login Heading */
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Role Selector */
+.role-selector {
+    margin: 10px 0;
+}
+
+.role-selector select {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Reward Section */
+#reward-section {
+    margin-top: 20px;
+}
+
+#reward-section i {
+    color: gold; /* Gold color for stars */
+    font-size: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    main {
+        margin-top: 120px; /* Adjust for smaller screens */
+        padding: 10px;
+    }
+
+    .login-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    section {
+        max-width: 90%;
+    }
+}
+
+
+input[type="text"], input[type="password"], select, textarea {
+    font-size: 16px; 
+}
+
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
